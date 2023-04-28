@@ -4,7 +4,7 @@ Plugin Name: Guesty Calendar Widgets
 Plugin URI: 
 Description: Display guesty calendar widgets
 Author: Braudy Pedrosa
-Version: 1.0
+Version: 1.1
 Author URI: http://buildupbookings.com/
 */
 
