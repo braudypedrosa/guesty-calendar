@@ -9,6 +9,7 @@ jQuery(document).ready(function(){
         jQuery(this).find('#gc_arrival_date').datepicker({
             defaultDate: new Date(),
             minDate: new Date(),
+            yearRange: new Date().getFullYear() + ':' + new Date().getFullYear(),
             beforeShowDay: function(date) {
                 ymd = date.getFullYear() + "-" + (("0" + (date.getMonth() + 1)).slice(-2)) + "-" + (("0" + date.getDate()).slice(-2));
                 if (jQuery.inArray(ymd, availableDates) !== -1) {
@@ -30,6 +31,7 @@ jQuery(document).ready(function(){
         jQuery(this).find('#gc_departure_date').datepicker({
             defaultDate: new Date(),
             minDate: new Date(),
+            yearRange: new Date().getFullYear() + ':' + new Date().getFullYear(),
             beforeShowDay: function(date) {
                 ymd = date.getFullYear() + "-" + (("0" + (date.getMonth() + 1)).slice(-2)) + "-" + (("0" + date.getDate()).slice(-2));
                 if (jQuery.inArray(ymd, availableDates) !== -1) {
