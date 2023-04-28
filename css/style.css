@@ -60,7 +60,7 @@
     opacity: 0.8;
 }
 
-.gc_booking_widget .gc_form_errors .error-notice {
+.error-notice {
     background: #ed7777;
     display: block;
     padding: 10px;
