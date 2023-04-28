@@ -141,7 +141,9 @@ function _guesty_calendar_get_availability($listingID){
         $json_result = json_decode($result, true);
 
         foreach($json_result as $date) {
-            array_push($availableDates, $date['date']);
+            if($date['status'] == 'available') {
+                array_push($availableDates, $date['date']);
+            }
         }
 
     }
