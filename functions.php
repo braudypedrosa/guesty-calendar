@@ -105,7 +105,7 @@ function _guesty_calendar_get_availability($listingID){
 
     // only check availability within current day to end of the year
     $today = date("Y-m-d");
-    $yearEnd = date('Y-m-d', strtotime('12/31'));
+    $yearEnd = date('Y-m-d', strtotime('+3 months', strtotime('12/31')));
 
     // initialize array for available dates
     $availableDates = array();
