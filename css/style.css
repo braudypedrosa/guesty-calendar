@@ -1,0 +1,69 @@
+.gc_booking_widget div input {
+    padding: 10px 15px;
+    font-family: inherit;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gc_booking_widget .gc_arrival_date,
+.gc_booking_widget .gc_departure_date,
+.gc_booking_widget .gc_guests  {
+    position: relative;
+}
+
+.gc_booking_widget .gc_arrival_date input,
+.gc_booking_widget .gc_departure_date input,
+.gc_booking_widget .gc_guests input {
+    padding-left: 35px;
+}
+
+.gc_booking_widget .gc_arrival_date:after,
+.gc_booking_widget .gc_departure_date:after,
+.gc_booking_widget .gc_guests:after {
+    content: '';
+    display: block;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+} 
+
+.gc_booking_widget .gc_arrival_date:after,
+.gc_booking_widget .gc_departure_date:after {
+    background-image: url(/wp-content/plugins/guesty-calendar-main/images/calendar.png);
+}
+
+.gc_booking_widget .gc_guests:after {
+    background-image: url(/wp-content/plugins/guesty-calendar-main/images/avatar.png);
+}
+
+.gc_booking_widget div:not(:last-child) input {
+    margin-bottom: 1em;
+}
+
+
+.gc_booking_widget .gc_book_now button {
+    border: none;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.gc_booking_widget .gc_book_now button:hover {
+    opacity: 0.8;
+}
+
+.gc_booking_widget .gc_form_errors .error-notice {
+    background: #ed7777;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
